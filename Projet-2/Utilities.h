@@ -1,3 +1,4 @@
+//code : Nathan BAURIN
 #pragma once
 class Utility
 {
@@ -8,9 +9,9 @@ class Utility
 class Vector2
 {
 public:
-    // la colonne
+    // colonne
     int x = 0;
 
-    // la ligne
+    // ligne
     int y = 0;
 };
