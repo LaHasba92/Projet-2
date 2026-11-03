@@ -1,29 +1,49 @@
 #pragma once
-#include <vector2>
+#include "Utilities.h"
 
-class Entity {
-	Vector2 position;
-	int vie;
-	bool vivant;
+class Entity
+{
+public:
+    Vector2 position{};
+    int vie = 100;
+    bool vivant = true;
 };
 
-Entity Move(Entity entity, Vector2 direction) {
-	entity.position += direction;
+inline Entity Move(Entity entity, Vector2 direction)
+{
+    entity.position.x += direction.x;
+    entity.position.y += direction.y;
+    return entity;
 }
 
-Entity ApplyDamage(Entity entity, int damage) {
-	entity.vie -= damage;
-	if (entity.vie <= 0) {
+inline Entity ExecuteAction(Entity entity, Vector2 direction, int damage)
+{
+	return entity;
+}
+
+inline Entity ApplyDamage(Entity entity, int damage)
+{
+    entity.vie -= damage;
+    return entity;
+}
+
+inline Entity CheckDeath(Entity entity)
+{
+	if (entity.vie <= 0)
 		entity.vivant = false;
-	}
+	return entity;
 }
 
-Entity OnCollision(Entity entity, Entity autre) {
-	pass;
+inline Entity OnCollision(Entity entity, const Entity& autre)
+{
+    // À compléter quand le comportement des collisions sera défini.
+    (void)autre;
+    return entity;
 }
 
-Entity OnUpdate(Entity entity) {
-	entity.move(entity.position);
-	entity.applyDamage(entity.vie);
-	entity.onCollision(entity, autre);
+inline Entity OnUpdate(Entity entity, Vector2 direction, int damage)
+{
+	entity.Move(entity, direction);
+	entity.CheckDeath(entity);
+    return entity;
 }
