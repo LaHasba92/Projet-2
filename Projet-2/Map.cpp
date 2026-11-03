@@ -36,7 +36,7 @@ int Map::get1DCell(Vector2 position) const
     // 2 * 20 + 3 donne l'indice 43
     return position.y * width + position.x;
 }
-// Charge les informations de la carte
+// Charge les informations de la carteuj
 void Map::display() const
 {
     for (int y = 0; y < height; ++y)
