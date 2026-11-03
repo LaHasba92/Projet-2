@@ -1,6 +1,6 @@
 //code : Nathan BAURIN
 #pragma once
-class Utility
+class Utilities
 {
 
 };
@@ -15,3 +15,6 @@ public:
     // ligne
     int y = 0;
 };
+void operator+(Vector2& a, Vector2& b);
+void operator-(Vector2& a, Vector2& b);
+bool operator==(Vector2& a, Vector2& b);
