@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\",
+  "WorkspaceRootPath": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet-2\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet-2\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet-2\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet-2\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projet-2\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -22,19 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Map.h",
-              "DocumentMoniker": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h",
               "RelativeDocumentMoniker": "Projet-2\\Map.h",
-              "ToolTip": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.h",
               "RelativeToolTip": "Projet-2\\Map.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-03T13:55:43.78Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.h",
+              "RelativeDocumentMoniker": "Projet-2\\Entity.h",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.h",
+              "RelativeToolTip": "Projet-2\\Entity.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-03T17:28:15.171Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.cpp",
+              "RelativeDocumentMoniker": "Projet-2\\Entity.cpp",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Entity.cpp",
+              "RelativeToolTip": "Projet-2\\Entity.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-03T17:28:14.511Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -52,11 +87,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Map.cpp",
-              "DocumentMoniker": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp",
               "RelativeDocumentMoniker": "Projet-2\\Map.cpp",
-              "ToolTip": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Map.cpp",
               "RelativeToolTip": "Projet-2\\Map.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -65,16 +100,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Utilities.h",
-              "DocumentMoniker": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h",
               "RelativeDocumentMoniker": "Projet-2\\Utilities.h",
-              "ToolTip": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Utilities.h",
               "RelativeToolTip": "Projet-2\\Utilities.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-03T13:43:31.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-03T13:43:31.019Z"
             }
           ]
         }
