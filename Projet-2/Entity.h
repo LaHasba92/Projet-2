@@ -1,4 +1,5 @@
 #pragma once
+#include "Utilities.h"
 #include <vector2>
 
 class Entity {
