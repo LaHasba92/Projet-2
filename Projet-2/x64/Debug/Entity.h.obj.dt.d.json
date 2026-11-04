@@ -1,9 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h",
+        "Source": "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\entity.h",
         "ProvidedModule": "",
-        "Includes": [],
+        "Includes": [
+            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\map.h"
+        ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
     }
