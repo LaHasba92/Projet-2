@@ -25,7 +25,41 @@ Map::~Map()
     delete[] cells;
 }
 
-// Configure l'affichage et les propriétés de chaque terrain.
+// Convertit une position en indice dans le tableau.
+int Map::get1DCell(Vector2 position) const
+{
+    return position.getY() * width + position.getX();
+}
+
+// Vérifie si la position se trouve dans les limites de la carte.
+bool Map::isInsideMap(Vector2 position) const
+{
+    int x = position.getX();
+    int y = position.getY();
+
+    return x >= 0 && x < width && y >= 0 && y < height;
+}
+
+// Change une case si sa position et son type sont valides.
+bool Map::setCell(Vector2 position, E_CellType cellType)
+{
+    if (!isInsideMap(position))
+    {
+        return false;
+    }
+
+    int type = static_cast<int>(cellType);
+
+    if (type < Ground || type >= CellType_Count)
+    {
+        return false;
+    }
+
+    cells[get1DCell(position)] = type;
+    return true;
+}
+
+// Associe un symbole et des propriétés à chaque terrain.
 void Map::initializeCellInfos()
 {
     cellInfos[Ground].symbol = '.';
@@ -45,32 +79,6 @@ void Map::initializeCellInfos()
     cellInfos[Exit].isSwimmable = false;
 }
 
-// Convertit une position en indice dans cells.
-int Map::get1DCell(Vector2 position) const
-{
-    return position.y * width + position.x;
-}
-
-// Modifie une case si sa position est dans la carte.
-bool Map::setCell(Vector2 position, E_CellType cellType)
-{
-    if (position.x < 0 || position.x >= width ||
-        position.y < 0 || position.y >= height)
-    {
-        return false;
-    }
-
-    int type = static_cast<int>(cellType);
-
-    if (type < Ground || type >= CellType_Count)
-    {
-        return false;
-    }
-
-    cells[get1DCell(position)] = type;
-    return true;
-}
-
 // Affiche le symbole associé à chaque case.
 void Map::display() const
 {
@@ -78,45 +86,41 @@ void Map::display() const
     {
         for (int x = 0; x < width; ++x)
         {
-            int index = y * width + x;
-            int type = cells[index];
-            std::cout << cellInfos[type].symbol << ' ';
+            Vector2 position(x, y);
+            int index = get1DCell(position);
+            int cellType = cells[index];
+
+            std::cout << cellInfos[cellType].symbol << ' ';
         }
 
         std::cout << '\n';
     }
-}  
-
-// Vérifie si la position est à l'intérieur de la carte.
-bool Map::isInsideMap(Vector2 position) const
-{
-	return position.x >= 0 && position.x < width &&
-		position.y >= 0 && position.y < height;
 }
 
-// Vérifie si la case à la position donnée est praticable.
+// Vérifie si la case peut être traversée à pied.
 bool Map::isWalkable(Vector2 position) const
 {
-	if (!isInsideMap(position))
-	{
-		return false;
-	}
+    if (!isInsideMap(position))
+    {
+        return false;
+    }
 
-	int index = get1DCell(position);
-	int cellType = cells[index];
+    int index = get1DCell(position);
+    int cellType = cells[index];
 
-	return cellInfos[type].isWalkable;
+    return cellInfos[cellType].isWalkable;
 }
 
-// Vérifie si la case à la position donnée est nageable.
+// Vérifie si la case peut être traversée à la nage.
 bool Map::isSwimmable(Vector2 position) const
 {
-	if (!isInsideMap(position))
-	{
-		return false;
-	}
-	int index = get1DCell(position);
-	int cellType = cells[index];
+    if (!isInsideMap(position))
+    {
+        return false;
+    }
 
-	return cellInfos[cellType].isSwimmable;
+    int index = get1DCell(position);
+    int cellType = cells[index];
+
+    return cellInfos[cellType].isSwimmable;
 }
