@@ -2,6 +2,10 @@
 
 #include <iostream>
 
+#include <fstream>
+
+#include <string>
+
 // Crée la grille et initialise ses propriétés.
 Map::Map(int mapWidth, int mapHeight)
     : width(mapWidth), height(mapHeight)
@@ -123,4 +127,141 @@ bool Map::isSwimmable(Vector2 position) const
     int cellType = cells[index];
 
     return cellInfos[cellType].isSwimmable;
+}
+
+// Réinitialise la carte à l'état par défaut.
+void Map::resetCells()
+{
+    enemySpawns.clear();
+    playerSpawn = Vector2();
+
+    for (int i = 0; i < width * height; ++i)
+    {
+        cells[i] = Ground;
+    }
+}
+
+// Remet la carte à son état de départ.
+void Map::resetCells()
+{
+    enemySpawns.clear();
+    playerSpawn = Vector2();
+
+    for (int i = 0; i < width * height; ++i)
+    {
+        cells[i] = Ground;
+    }
+}
+
+// Charge toutes les lignes d'un fichier de niveau.
+bool Map::loadFromFile(const char* fileName)
+{
+    std::ifstream file(fileName);
+
+    if (!file.is_open())
+    {
+        return false;
+    }
+
+    resetCells();
+
+    int heroCount = 0;
+    int exitCount = 0;
+
+    for (int y = 0; y < height; ++y)
+    {
+        if (!readRow(file, y, heroCount, exitCount))
+        {
+            return false;
+        }
+    }
+
+    std::string extraLine;
+
+    if (std::getline(file, extraLine))
+    {
+        return false;
+    }
+
+    return heroCount == 1 && exitCount == 1;
+}
+
+// Lit une ligne et retire le caractère CR des fins de ligne Windows.
+bool Map::readRow(
+    std::ifstream& file,
+    int y,
+    int& heroCount,
+    int& exitCount
+)
+{
+    std::string line;
+
+    if (!std::getline(file, line))
+    {
+        return false;
+    }
+
+    if (!line.empty() && line.back() == '\r')
+    {
+        line.pop_back();
+    }
+
+    return loadRow(line, y, heroCount, exitCount);
+}
+
+// Vérifie la longueur de la ligne et lit chacune de ses cases.
+bool Map::loadRow(
+    const std::string& line,
+    int y,
+    int& heroCount,
+    int& exitCount
+)
+{
+    if (line.size() != static_cast<std::size_t>(width))
+    {
+        return false;
+    }
+
+    for (int x = 0; x < width; ++x)
+    {
+        Vector2 position(x, y);
+
+        if (!loadCell(line[x], position, heroCount, exitCount))
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// Convertit le symbole du fichier en case et en position de départ.
+bool Map::loadCell(
+    char symbol,
+    Vector2 position,
+    int& heroCount,
+    int& exitCount
+)
+{
+    switch (symbol)
+    {
+    case '.':
+        return setCell(position, Ground);
+    case '~':
+        return setCell(position, Water);
+    case 'A':
+        return setCell(position, Mountain);
+    case 'E':
+        ++exitCount;
+        return setCell(position, Exit);
+    case 'H':
+        ++heroCount;
+        playerSpawn = position;
+        return setCell(position, Ground);
+    case 'X':
+        enemySpawns.push_back(position);
+        return setCell(position, Ground);
+    default:
+        return false;
+    }
 }

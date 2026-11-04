@@ -4,6 +4,10 @@
 
 #include <vector>
 
+#include <fstream>
+
+#include <string>
+
 // Types de cases repris du code du professeur.
 enum E_CellType
 {
@@ -37,7 +41,7 @@ public:
 	bool isWalkable(Vector2 position) const;
 	bool isSwimmable(Vector2 position) const;
     void display() const;
-    
+	bool loadFromFile(const char* fileName);
 
 private:
     int* cells = nullptr;
@@ -51,4 +55,27 @@ private:
     std::vector<Vector2> enemySpawns{};
 	void initializeCellInfos();
 	bool isInsideMap(Vector2 position) const;
+
+	void resetCells();
+
+    bool readRow(
+        std::ifstream& file,
+        int y,
+        int& heroCount,
+        int& exitCount
+      );
+    
+    bool loadRow(
+        const std::string& line,
+        int y,
+        int& heroCount,
+        int& exitCount
+    );
+
+	bool loadCell(
+		char symbol,
+		Vector2 position,
+		int& heroCount,
+		int& exitCount
+	);
 };
