@@ -34,7 +34,10 @@ public:
 
     int get1DCell(Vector2 position) const;
     bool setCell(Vector2 position, E_CellType cellType);
+	bool isWalkable(Vector2 position) const;
+	bool isSwimmable(Vector2 position) const;
     void display() const;
+    
 
 private:
     int* cells = nullptr;
@@ -47,4 +50,5 @@ private:
     Vector2 playerSpawn{};
     std::vector<Vector2> enemySpawns{};
 	void initializeCellInfos();
+	bool isInsideMap(Vector2 position) const;
 };

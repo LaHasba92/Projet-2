@@ -3,7 +3,9 @@
     "Data": {
         "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.cpp",
         "ProvidedModule": "",
-        "Includes": [],
+        "Includes": [
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h"
+        ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
     }

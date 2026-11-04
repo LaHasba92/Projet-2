@@ -85,4 +85,38 @@ void Map::display() const
 
         std::cout << '\n';
     }
-}   
+}  
+
+// Vérifie si la position est à l'intérieur de la carte.
+bool Map::isInsideMap(Vector2 position) const
+{
+	return position.x >= 0 && position.x < width &&
+		position.y >= 0 && position.y < height;
+}
+
+// Vérifie si la case à la position donnée est praticable.
+bool Map::isWalkable(Vector2 position) const
+{
+	if (!isInsideMap(position))
+	{
+		return false;
+	}
+
+	int index = get1DCell(position);
+	int cellType = cells[index];
+
+	return cellInfos[type].isWalkable;
+}
+
+// Vérifie si la case à la position donnée est nageable.
+bool Map::isSwimmable(Vector2 position) const
+{
+	if (!isInsideMap(position))
+	{
+		return false;
+	}
+	int index = get1DCell(position);
+	int cellType = cells[index];
+
+	return cellInfos[cellType].isSwimmable;
+}
