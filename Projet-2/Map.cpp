@@ -47,6 +47,7 @@ void Map::initializeTileInfos() // initialise le tableau tileInfos avec les cara
 	tileInfos[exit].isSwimmable = false;
 }
 
+
 void Map::display() const
 {
 	for (int y = 0; y < height; ++y)

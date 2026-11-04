@@ -1,5 +1,6 @@
 //code : Nathan BAURIN
 #pragma once
+
 class Utilities
 {
 
@@ -14,7 +15,9 @@ public:
 
     // ligne
     int y = 0;
+
+    Vector2 operator+(const Vector2& b) const;
+    Vector2 operator-(const Vector2& b) const;
+    Vector2& operator+=(const Vector2& b);
+    bool operator==(const Vector2& b) const;
 };
-void operator+(Vector2& a, Vector2& b);
-void operator-(Vector2& a, Vector2& b);
-bool operator==(Vector2& a, Vector2& b);

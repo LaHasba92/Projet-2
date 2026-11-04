@@ -35,6 +35,7 @@ public:
 	int get1Dcell(Vector2 position) const;    // retourne l'index de la cellule dans le tableau 1D
 	bool loadFromFile(const char* filename); // charge la map depuis un fichier
 	void display() const;					// affiche la map dans la console
+	bool setCell(Vector2 position, E_CellType type); // modifie le type de cellule a la position donnee
 private:
 	int* cells = nullptr; // tableau 1D contenant les types de cellules
 	int width = 0;			// largeur de la map
