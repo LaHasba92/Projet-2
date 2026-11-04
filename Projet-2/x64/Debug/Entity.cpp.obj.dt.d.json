@@ -4,8 +4,7 @@
         "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h",
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h"
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

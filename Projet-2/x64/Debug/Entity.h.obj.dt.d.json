@@ -3,9 +3,7 @@
     "Data": {
         "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h",
         "ProvidedModule": "",
-        "Includes": [
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h"
-        ],
+        "Includes": [],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
     }
