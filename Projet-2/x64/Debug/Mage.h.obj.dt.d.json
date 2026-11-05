@@ -1,11 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\mage.h",
+        "Source": "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\mage.h",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\player.h",
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\entity.h"
+            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\player.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

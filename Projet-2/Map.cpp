@@ -129,18 +129,6 @@ bool Map::isSwimmable(Vector2 position) const
     return cellInfos[cellType].isSwimmable;
 }
 
-// Réinitialise la carte à l'état par défaut.
-void Map::resetCells()
-{
-    enemySpawns.clear();
-    playerSpawn = Vector2();
-
-    for (int i = 0; i < width * height; ++i)
-    {
-        cells[i] = Ground;
-    }
-}
-
 // Remet la carte à son état de départ.
 void Map::resetCells()
 {
@@ -194,16 +182,16 @@ bool Map::readRow(
     int& exitCount
 )
 {
-    std::string line;
+	std::string line;                // Variable pour stocker la ligne lue
 
-    if (!std::getline(file, line))
+	if (!std::getline(file, line))  // Lit une ligne du fichier et vérifie si la lecture a réussi
     {
         return false;
     }
 
-    if (!line.empty() && line.back() == '\r')
+	if (!line.empty() && line.back() == '\r') // Vérifie si le dernier caractère est un retour chariot (CR)
     {
-        line.pop_back();
+        line.pop_back();                      
     }
 
     return loadRow(line, y, heroCount, exitCount);
