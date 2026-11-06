@@ -42,6 +42,7 @@ public:
 	bool isSwimmable(Vector2 position) const;
     void display() const;
 	bool loadFromFile(const char* fileName);
+	bool isExit(Vector2 position) const;
 
 private:
     int* cells = nullptr;

@@ -1,13 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-<<<<<<< HEAD
-        "Source": "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\player.cpp",
-        "ProvidedModule": "",
-        "Includes": [
-            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\player.h"
-=======
-        "Source": "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\player.cpp",
+        "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\player.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
@@ -121,13 +115,15 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.28000.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\player.h",
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\entity.h",
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\map.h",
-            "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\utilities.h",
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\player.h",
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h",
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\map.h",
+            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_bit_utils.hpp"
->>>>>>> Player
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_bit_utils.hpp",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\fstream",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_filebuf.hpp",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

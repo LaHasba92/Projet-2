@@ -253,3 +253,13 @@ bool Map::loadCell(
         return false;
     }
 }
+
+bool Map::isExit(Vector2 position) const
+{
+	if (!isInsideMap(position))
+	{
+		return false;
+	}
+	int index = get1DCell(position);
+	return cells[index] == Exit;
+}
