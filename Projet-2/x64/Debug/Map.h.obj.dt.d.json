@@ -1,10 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
+<<<<<<< HEAD
         "Source": "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\map.h",
         "ProvidedModule": "",
         "Includes": [
             "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\utilities.h",
+=======
+        "Source": "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\map.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.h",
+>>>>>>> Player
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vcruntime.h",

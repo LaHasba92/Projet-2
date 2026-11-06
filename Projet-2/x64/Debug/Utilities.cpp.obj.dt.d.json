@@ -1,10 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
+<<<<<<< HEAD
         "Source": "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\utilities.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\utilities.h"
+=======
+        "Source": "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.h"
+>>>>>>> Player
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

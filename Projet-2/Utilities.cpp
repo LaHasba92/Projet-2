@@ -15,6 +15,16 @@ int Vector2::getY() const
 	return y;
 }
 
+void Vector2::setX(int x)
+{
+	this->x = x;
+}
+
+void Vector2::setY(int y)
+{
+	this->y = y;
+}
+
 Vector2 Vector2::operator+(const Vector2& other) const
 {
 	return Vector2(x + other.x, y + other.y);

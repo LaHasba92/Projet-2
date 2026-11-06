@@ -9,6 +9,9 @@ public:
     int getX() const;
     int getY() const;
 
+    void setX(int x);
+    void setY(int y);
+
     Vector2 operator+(const Vector2& other) const;
     Vector2 operator-(const Vector2& other) const;
     Vector2& operator+=(const Vector2& other);
