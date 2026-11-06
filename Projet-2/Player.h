@@ -1,15 +1,6 @@
 #include "Entity.h"
 
-enum class Direction
-{
-	HAUT,
-	BAS,
-	GAUCHE,
-	DROITE,
-	AUCUNE
-};
-
-class Player : Entity {
+class Player : public Entity {
 public:
 	Player(Vector2 position, int health);
 
