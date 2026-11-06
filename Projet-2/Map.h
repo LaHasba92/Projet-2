@@ -52,8 +52,8 @@ private:
     // Chaque indice correspond à un élément de E_CellType.
     CellInfo cellInfos[CellType_Count]{};
 
-    Vector2 playerSpawn{};
-    std::vector<Vector2> enemySpawns{};
+    Vector2 playerSpawn;
+    std::vector<Vector2> enemySpawns;
 	void initializeCellInfos();
 	bool isInsideMap(Vector2 position) const;
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #pragma once
 #include "Player.h"
 
@@ -18,4 +16,3 @@ private:
     static constexpr int ATTACK_DAMAGE = 15;
     static constexpr int ATTACK_RANGE = 3;
 };
->>>>>>> Player
