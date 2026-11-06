@@ -1,10 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\bbodin\\documents\\github\\projet-2\\projet-2\\utilities.cpp",
+        "Source": "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h"
+            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

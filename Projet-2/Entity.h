@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Map.h"
+#include "Utilities.h"
 
 // Classe parent commune au joueur et aux ennemis.
 class Entity
