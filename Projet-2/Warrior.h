@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #pragma once
 #include "Player.h"
 
@@ -17,4 +15,3 @@ private:
 
     void attack(Entity* target);
 };
->>>>>>> Player
