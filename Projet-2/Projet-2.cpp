@@ -1,17 +1,12 @@
-#include "Map.h"
+#include "Game.h"
+
 
 #include <iostream>
 
 int main()
 {
-    Map map(20, 10);
+	Game* game = Game::getInstance();
+	game->run();
 
-    if (!map.loadFromFile("levels/level01.txt"))
-    {
-        std::cout << "Impossible de charger le niveau.\n";
-        return 1;
-    }
-
-    map.display();
-    return 0;
+	return 0;
 }
