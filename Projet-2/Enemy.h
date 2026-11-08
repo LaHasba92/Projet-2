@@ -7,5 +7,5 @@ public:
     Enemy(Vector2 position, int health);
 
     void onCollision(Entity* other) override;
-    void onUpdate() override;
+    void onUpdate(const Map& map, Entity* player) override;
 };

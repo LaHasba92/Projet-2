@@ -7,7 +7,7 @@ public:
     WarriorMage(Vector2 position);
 
     void onCollision(Entity* other) override;
-    void onUpdate() override;
+    void onUpdate(const Map& map, Entity* player) override;
 
     void attackMelee(Entity* target);
     void castSpell(Entity* target);

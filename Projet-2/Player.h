@@ -5,7 +5,7 @@ public:
 	Player(Vector2 position, int health);
 
 	void onCollision(Entity* other) override;
-	void onUpdate() override;
+	void onUpdate(const Map& map, Entity* player) override;
 
 	void readPlayerInputs(const Map& map);
 	void GetDirection(Vector2& direction) const;

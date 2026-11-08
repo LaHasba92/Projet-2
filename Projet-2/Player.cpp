@@ -8,12 +8,10 @@ Player::Player(Vector2 position, int health)
 
 void Player::onCollision(Entity* other)
 {
-	// Implémentation spécifique au joueur lors d'une collision.
 }
 
-void Player::onUpdate()
+void Player::onUpdate(const Map& map, Entity* player)
 {
-	// Implémentation spécifique au joueur lors de la mise à jour.
 }
 
 void Player::readPlayerInputs(const Map& map)

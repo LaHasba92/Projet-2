@@ -5,15 +5,13 @@ Warrior::Warrior(Vector2 position)
 {
 }
 
-void Warrior::onUpdate()
+void Warrior::onUpdate(const Map& map, Entity* player)
 {
-    // Mise à jour spécifique au Warrior.
 }
 
 void Warrior::onCollision(Entity* other)
 {
-    // À compléter avec la logique d'identification
-    // des ennemis et l'application des dégâts.
+    // À compléter avec la logique d'identification des ennemis et l'application des dégâts.
 }
 
 void Warrior::attack(Entity* target)

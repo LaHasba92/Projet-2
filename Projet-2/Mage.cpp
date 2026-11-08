@@ -6,9 +6,8 @@ Mage::Mage(Vector2 position)
 {
 }
 
-void Mage::onUpdate()
+void Mage::onUpdate(const Map& map, Entity* player)
 {
-    // Aucune mécanique supplémentaire.
 }
 
 void Mage::onCollision(Entity* other)

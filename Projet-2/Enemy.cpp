@@ -5,6 +5,10 @@ Enemy::Enemy(Vector2 position, int health)
 {
 }
 
-void Enemy::onCollision(Entity* other) {}
+void Enemy::onCollision(Entity* other)
+{
+}
 
-void Enemy::onUpdate() {}
+void Enemy::onUpdate(const Map& map, Entity* player)
+{
+}
