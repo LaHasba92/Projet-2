@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\game.cpp",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\game.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
