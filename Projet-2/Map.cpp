@@ -112,7 +112,11 @@ bool Map::isWalkable(Vector2 position) const
     int index = get1DCell(position);
     int cellType = cells[index];
 
+<<<<<<< HEAD
     return cellInfos[cellType].isWalkable;
+=======
+	return cellInfos[cellType].isWalkable;
+>>>>>>> Player
 }
 
 // Vérifie si la case peut être traversée à la nage.

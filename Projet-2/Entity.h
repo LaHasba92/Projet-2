@@ -12,7 +12,7 @@ public:
 
     // Ces fonctions seront définies par Player et Enemy.
     virtual void onCollision(Entity* other) = 0;
-    virtual void onUpdate() = 0;
+    virtual void onUpdate(const Map& map, Entity* player) = 0;
 
     // Déplace l'entité si la case est accessible.
     bool move(Vector2 direction, const Map& map);

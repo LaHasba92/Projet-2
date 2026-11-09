@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\",
   "Documents": [
     {
@@ -57,6 +58,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|solutionrelative:Projet-2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|solutionrelative:Projet-2\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A28E257-F07C-417A-8389-13ECA25DD26F}|Projet-2\\Projet-2.vcxproj|solutionrelative:Projet-2\\Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+>>>>>>> Player
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 8,
+=======
+          "SelectedChildIndex": 3,
+>>>>>>> Player
           "Children": [
             {
               "$type": "Document",
@@ -109,6 +125,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Game.h",
@@ -154,10 +171,22 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-04T13:31:54.734Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Zombie.h",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.h",
+              "RelativeDocumentMoniker": "Projet-2\\Zombie.h",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.h",
+              "RelativeToolTip": "Projet-2\\Zombie.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-08T11:15:25.777Z",
+>>>>>>> Player
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Projet-2.cpp",
               "DocumentMoniker": "C:\\Users\\nbaurin\\Documents\\GitHub\\Projet-2\\Projet-2\\Projet-2.cpp",
@@ -251,6 +280,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-03T21:57:50.76Z"
+=======
+              "DocumentIndex": 1,
+              "Title": "Zombie.cpp",
+              "DocumentMoniker": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.cpp",
+              "RelativeDocumentMoniker": "Projet-2\\Zombie.cpp",
+              "ToolTip": "C:\\Users\\lordl\\Documents\\GitHub\\Projet-2\\Projet-2\\Zombie.cpp",
+              "RelativeToolTip": "Projet-2\\Zombie.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-08T11:15:24.226Z",
+              "EditorCaption": ""
+>>>>>>> Player
             }
           ]
         }

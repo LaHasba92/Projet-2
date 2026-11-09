@@ -6,15 +6,13 @@ WarriorMage::WarriorMage(Vector2 position)
 {
 }
 
-void WarriorMage::onUpdate()
+void WarriorMage::onUpdate(const Map& map, Entity* player)
 {
-    // Mise à jour spécifique au WarriorMage.
 }
 
 void WarriorMage::onCollision(Entity* other)
 {
-    // La logique de collision sera complétée
-    // avec le système de combat.
+    // La logique de collision sera complétée avec le système de combat.
 }
 
 void WarriorMage::attackMelee(Entity* target)
