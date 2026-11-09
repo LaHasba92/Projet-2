@@ -16,6 +16,8 @@ public:
 
     // Déplace l'entité si la case est accessible.
     bool move(Vector2 direction, const Map& map);
+    bool move(Vector2 direction, const Map& map, bool canSwim);
+
 
     // Retire des points de vie.
     void applyDamage(int damage);

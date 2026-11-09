@@ -11,12 +11,16 @@ Entity::Entity(Vector2 startPosition, int startHealth)
 // Calcule la prochaine position et vérifie le terrain avec Map.
 bool Entity::move(Vector2 direction, const Map& map)
 {
+    return move(direction, map, false);
+}
+
+bool Entity::move(Vector2 direction, const Map& map, bool canSwim)
+{
     Vector2 newPosition = position + direction;
 
-    if (!map.isWalkable(newPosition))
-    {
+    if (!map.isWalkable(newPosition) &&
+        !(canSwim && map.isSwimmable(newPosition)))
         return false;
-    }
 
     position = newPosition;
     return true;
