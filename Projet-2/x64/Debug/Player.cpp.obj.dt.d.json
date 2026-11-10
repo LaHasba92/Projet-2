@@ -1,11 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-<<<<<<< HEAD
-        "Source": "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\player.cpp",
-=======
-        "Source": "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\player.cpp",
->>>>>>> Player
+        "Source": "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\player.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
@@ -132,22 +128,16 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\clocale",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\locale.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\ostream",
-<<<<<<< HEAD
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\player.h",
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\entity.h",
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\map.h",
-            "c:\\users\\nbaurin\\documents\\github\\projet-2\\projet-2\\utilities.h",
-=======
-            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\player.h",
-            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\entity.h",
-            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\map.h",
-            "c:\\users\\lordl\\documents\\github\\projet-2\\projet-2\\utilities.h",
->>>>>>> Player
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_bit_utils.hpp",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\ucrt\\conio.h",
+            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\player.h",
+            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\entity.h",
+            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\map.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\fstream",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_filebuf.hpp",
-            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string"
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\string",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\vector",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_bit_utils.hpp",
+            "c:\\users\\natba\\documents\\github\\projet-2\\projet-2\\utilities.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

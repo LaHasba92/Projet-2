@@ -2,10 +2,6 @@
 
 #include <iostream>
 
-#include <fstream>
-
-#include <string>
-
 // Crée la grille et initialise ses propriétés.
 Map::Map(int mapWidth, int mapHeight)
     : width(mapWidth), height(mapHeight)
@@ -35,7 +31,7 @@ int Map::get1DCell(Vector2 position) const
     return position.getY() * width + position.getX();
 }
 
-// Vérifie si la position se trouve dans les limites de la carte.
+// Vérifie si une position est dans les limites de la carte.
 bool Map::isInsideMap(Vector2 position) const
 {
     int x = position.getX();
@@ -66,39 +62,10 @@ bool Map::setCell(Vector2 position, E_CellType cellType)
 // Associe un symbole et des propriétés à chaque terrain.
 void Map::initializeCellInfos()
 {
-    cellInfos[Ground].symbol = '.';
-    cellInfos[Ground].isWalkable = true;
-    cellInfos[Ground].isSwimmable = false;
-
-    cellInfos[Water].symbol = '~';
-    cellInfos[Water].isWalkable = false;
-    cellInfos[Water].isSwimmable = true;
-
-    cellInfos[Mountain].symbol = 'A';
-    cellInfos[Mountain].isWalkable = false;
-    cellInfos[Mountain].isSwimmable = false;
-
-    cellInfos[Exit].symbol = 'E';
-    cellInfos[Exit].isWalkable = true;
-    cellInfos[Exit].isSwimmable = false;
-}
-
-// Affiche le symbole associé à chaque case.
-void Map::display() const
-{
-    for (int y = 0; y < height; ++y)
-    {
-        for (int x = 0; x < width; ++x)
-        {
-            Vector2 position(x, y);
-            int index = get1DCell(position);
-            int cellType = cells[index];
-
-            std::cout << cellInfos[cellType].symbol << ' ';
-        }
-
-        std::cout << '\n';
-    }
+    cellInfos[Ground] = { '.', true, false };
+    cellInfos[Water] = { '~', false, true };
+    cellInfos[Mountain] = { 'A', false, false };
+    cellInfos[Exit] = { 'E', true, false };
 }
 
 // Vérifie si la case peut être traversée à pied.
@@ -112,14 +79,10 @@ bool Map::isWalkable(Vector2 position) const
     int index = get1DCell(position);
     int cellType = cells[index];
 
-<<<<<<< HEAD
     return cellInfos[cellType].isWalkable;
-=======
-	return cellInfos[cellType].isWalkable;
->>>>>>> Player
 }
 
-// Vérifie si la case peut être traversée à la nage.
+// Vérifie si la case est de l'eau.
 bool Map::isSwimmable(Vector2 position) const
 {
     if (!isInsideMap(position))
@@ -133,7 +96,94 @@ bool Map::isSwimmable(Vector2 position) const
     return cellInfos[cellType].isSwimmable;
 }
 
-// Remet la carte à son état de départ.
+// Vérifie si la position correspond à la sortie.
+bool Map::isExit(Vector2 position) const
+{
+    if (!isInsideMap(position))
+    {
+        return false;
+    }
+
+    int index = get1DCell(position);
+    return cells[index] == Exit;
+}
+
+// Renvoie la position de départ du joueur.
+Vector2 Map::getPlayerSpawn() const
+{
+    return playerSpawn;
+}
+
+// Renvoie les positions de départ des ennemis.
+const std::vector<Vector2>& Map::getEnemySpawns() const
+{
+    return enemySpawns;
+}
+
+// Affiche uniquement les cases de la carte.
+void Map::display() const
+{
+    display(Vector2(-1, -1));
+}
+
+// Affiche la carte avec le joueur.
+void Map::display(Vector2 playerPosition) const
+{
+    const std::vector<Vector2> noEnemies;
+    display(playerPosition, noEnemies);
+}
+
+// Affiche la carte avec le joueur et les ennemis.
+void Map::display(
+    Vector2 playerPosition,
+    const std::vector<Vector2>& enemyPositions
+) const
+{
+    for (int y = 0; y < height; ++y)
+    {
+        for (int x = 0; x < width; ++x)
+        {
+            Vector2 position(x, y);
+
+            if (position == playerPosition)
+            {
+                std::cout << 'H' << ' ';
+            }
+            else if (isEnemyAt(position, enemyPositions))
+            {
+                std::cout << 'X' << ' ';
+            }
+            else
+            {
+                int index = get1DCell(position);
+                int cellType = cells[index];
+
+                std::cout << cellInfos[cellType].symbol << ' ';
+            }
+        }
+
+        std::cout << '\n';
+    }
+}
+
+// Vérifie si un ennemi se trouve sur la position.
+bool Map::isEnemyAt(
+    Vector2 position,
+    const std::vector<Vector2>& enemyPositions
+) const
+{
+    for (const Vector2& enemyPosition : enemyPositions)
+    {
+        if (position == enemyPosition)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Remet la carte à son état initial avant un nouveau chargement.
 void Map::resetCells()
 {
     enemySpawns.clear();
@@ -145,7 +195,7 @@ void Map::resetCells()
     }
 }
 
-// Charge toutes les lignes d'un fichier de niveau.
+// Charge les lignes du fichier de niveau.
 bool Map::loadFromFile(const char* fileName)
 {
     std::ifstream file(fileName);
@@ -186,16 +236,16 @@ bool Map::readRow(
     int& exitCount
 )
 {
-	std::string line;                // Variable pour stocker la ligne lue
+    std::string line;
 
-	if (!std::getline(file, line))  // Lit une ligne du fichier et vérifie si la lecture a réussi
+    if (!std::getline(file, line))
     {
         return false;
     }
 
-	if (!line.empty() && line.back() == '\r') // Vérifie si le dernier caractère est un retour chariot (CR)
+    if (!line.empty() && line.back() == '\r')
     {
-        line.pop_back();                      
+        line.pop_back();
     }
 
     return loadRow(line, y, heroCount, exitCount);
@@ -227,7 +277,7 @@ bool Map::loadRow(
     return true;
 }
 
-// Convertit le symbole du fichier en case et en position de départ.
+// Convertit un symbole du fichier en case ou position de départ.
 bool Map::loadCell(
     char symbol,
     Vector2 position,
@@ -256,14 +306,4 @@ bool Map::loadCell(
     default:
         return false;
     }
-}
-
-bool Map::isExit(Vector2 position) const
-{
-	if (!isInsideMap(position))
-	{
-		return false;
-	}
-	int index = get1DCell(position);
-	return cells[index] == Exit;
 }

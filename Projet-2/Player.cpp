@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 #include "Player.h"
 
 Player::Player(Vector2 position, int health)
@@ -26,10 +27,9 @@ void Player::readPlayerInputs(const Map& map)
 
 void Player::GetDirection(Vector2& direction) const
 {
-    std::string touche;
-    std::cin >> touche;
+	int touche = _getch();
 
-    switch (touche[0])
+    switch (touche)
     {
     case 'z':
         direction.setY(-1);

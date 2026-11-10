@@ -1,3 +1,4 @@
+/*
 #include "ZombieSwimmer.h"
 
 #include <random>
@@ -70,3 +71,4 @@ void ZombieSwimmer::onUpdate(const Map& map, Entity* player)
 
     moveSwimming(directionChoisie, map);
 }
+*/
