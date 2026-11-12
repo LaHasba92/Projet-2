@@ -1,3 +1,4 @@
+// Nathan Baurin
 #include "Map.h"
 
 #include <iostream>
